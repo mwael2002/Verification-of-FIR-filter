@@ -1,7 +1,7 @@
 # Verification-of-FIR-filter
-### Building a Matlab FIR Golden Model (Lowpass filter) and generating 3 input noisy signals each one of different frequency. 
-### Building full UVM environment that consists of 3 sequence items each one takes one generated signal from Matlab
-### Comparing the output with the output from the Golden Model in the Scoreboard.
+### Building a Matlab FIR Lowpass filter Golden Model and generating 3 input noisy signals each one of different frequency. 
+### Building full UVM environment that has of 3 sequence items each one takes one generated signal from Matlab
+### Comparing the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
 ### The three signals have frequencies 0.5KHz, 1KHz and 3KHz.
 ### The filter has cutoff frequency of 1KHz
 ## These are the plots of the inputs and the outputs of Matlab:
