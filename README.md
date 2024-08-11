@@ -4,6 +4,7 @@
 ### Comparing the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
 ### The three signals have frequencies 0.5KHz, 1KHz and 3KHz.
 ### The filter has cutoff frequency of 1KHz
+## Until now, The Matlab model has finished and The verification environment build phase
 ## These are the plots of the inputs and the outputs of Matlab:
 ### 1- 500 Hz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185707.png)
