@@ -7,7 +7,6 @@ vsim -voptargs=+acc work.Top_module -classdebug -uvmcontrol=all -coverage
 add wave -position insertpoint  \
 sim:/Top_module/FIR_IF/reset \
 sim:/Top_module/FIR_IF/noisy_signal \
-sim:/Top_module/FIR_IF/N \
 sim:/Top_module/FIR_IF/filtered_signal \
 sim:/Top_module/FIR_IF/clk
 

@@ -76,8 +76,8 @@ class FIR_seq_item extends uvm_sequence_item;
 
         $fclose(file_handle);
   
-        //file_handle=$fopen(file_name,"w");
-        //$fclose(file_handle);
+        file_handle=$fopen(file_name,"w");
+        $fclose(file_handle);
 
         get_sig=FILE_AVAILABLE;
         return get_sig;
