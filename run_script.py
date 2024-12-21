@@ -1,49 +1,104 @@
 import subprocess
-import os
 
-# Paths to the MATLAB executable and TCL interpreter
-matlab_executable = 'matlab'  # Adjust this to the full path if not in PATH
-tcl_interpreter = 'tclsh'  # Adjust this to the full path if not in PATH
+def run_matlab_script(matlab_script_path,matlab_executable_path):
+    """
+    Runs a MATLAB script and waits for it to finish.
+    
+    Args:
+        matlab_script_path (str): Path to the MATLAB script (without .m extension).
+    
+    Returns:
+        str: Output from the MATLAB process.
+    """
+    try:
+        # Command to run MATLAB
+        command = [
+            matlab_executable_path,
+            "-wait",
+            "-r",
+            matlab_script_path
+        ]
+        
+        # Run MATLAB and wait for it to finish
+        process = subprocess.run(
+            command,
+            text=True,
+            capture_output=True,
+            shell=True
+        )
+        
+        return process.returncode
+    except Exception as e:
+        print(f"Error running MATLAB script: {e}")
+        return None
 
-# Paths to your MATLAB script and TCL script
-matlab_script = 'script.m'  # Replace with your MATLAB script path
-tcl_script = 'script.do'  # Replace with your TCL script path
+def run_questa_with_mpf(mpf_file_path, tcl_commands=None):
+    """
+    Runs QuestaSim project file (.mpf) and optionally executes TCL commands.
+    
+    Args:
+        mpf_file_path (str): Path to the QuestaSim .mpf file.
+        tcl_commands (list, optional): List of TCL commands to run after opening the project.
+    
+    Returns:
+        str: Output from the QuestaSim process.
+    """
+    questasim_exe = "D:/A/questasim64_2021.1/win64/questasim.exe"  # Ensure `vsim` is in your system's PATH.
+    tcl_script = "\n".join(tcl_commands) if tcl_commands else ""
 
-# Ensure the scripts are executable
-os.chmod(matlab_script, 0o755)
-os.chmod(tcl_script, 0o755)
+    try:
+        # Run QuestaSim with the .mpf file
+        command = [
+            questasim_exe,
+            "-do",
+            f"project open {mpf_file_path}; {tcl_script}"
+        ]
+        
+        # Run QuestaSim and wait for it to finish
+        process = subprocess.run(
+            command,
+            text=True,
+            capture_output=True,
+            shell=True
+        )
 
-# Function to run MATLAB script
-def run_matlab():
-    process = subprocess.Popen([matlab_executable, '-batch', f"run('{matlab_script}')"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout, stderr = process.communicate()
-    if process.returncode != 0:
-        print(f"MATLAB script failed with error:\n{stderr.decode()}")
+        return process.returncode
+    except Exception as e:
+        print(f"Error running QuestaSim: {e}")
+        return None
+
+
+if __name__ == "__main__":
+    # Full path to MATLAB executable
+    matlab_executable = "D:/A/MathWorks_MATLAB_R2021a_v9.10.0.1602886/bin/matlab.exe"
+    
+    # Paths to files
+    matlab_script = "cd 'D:\C\Digital_Projects\FIR'; Signal_Generation"  # MATLAB script without .m extension
+    mpf_file = "D:/C/Digital_Projects/FIR/FIR.mpf"
+
+    # TCL commands for QuestaSim
+    tcl_commands = [
+        "do run.do", 
+    ]
+
+    # Run MATLAB script
+    print("Running MATLAB script...")
+    matlab_result = run_matlab_script(matlab_script,matlab_executable)
+
+    if matlab_result == 0:  # MATLAB script finished successfully
+        print("MATLAB script completed. Running QuestaSim...")
+        questa_result=run_questa_with_mpf(mpf_file, tcl_commands)
+        
+        if questa_result == 0:  # QuestaSim finished successfully
+            print("QuestaSim completed. Running second MATLAB script...")
+            matlab_script = "cd 'D:\C\Digital_Projects\FIR'; Generate_audio_dut"
+            second_matlab_result = run_matlab_script(matlab_script, matlab_executable)
+            
+            if second_matlab_result == 0:
+                print("Second MATLAB script completed successfully.")
+            else:
+                print("Second MATLAB script failed.")
+        else:
+            print("QuestaSim failed. Aborting second MATLAB script execution.")
     else:
-        print(f"MATLAB script output:\n{stdout.decode()}")
-
-# Function to run TCL script
-def run_tcl():
-    process = subprocess.Popen([tcl_interpreter, tcl_script], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout, stderr = process.communicate()
-    if process.returncode != 0:
-        print(f"TCL script failed with error:\n{stderr.decode()}")
-    else:
-        print(f"TCL script output:\n{stdout.decode()}")
-
-# Run both scripts in parallel
-if __name__ == '__main__':
-    from threading import Thread
-
-    matlab_thread = Thread(target=run_matlab)
-    tcl_thread = Thread(target=run_tcl)
-
-    # Start both threads
-    matlab_thread.start()
-    tcl_thread.start()
-
-    # Wait for both threads to complete
-    matlab_thread.join()
-    tcl_thread.join()
-
-    print("Both scripts have completed execution.")
+        print("First MATLAB script failed. Aborting subsequent steps.")
