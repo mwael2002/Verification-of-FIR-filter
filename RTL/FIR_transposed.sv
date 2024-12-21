@@ -53,11 +53,11 @@ module FIR_transposed(FIR_interface DUT_IF);
   endgenerate
   
   wire [31:0] filtered_signal;
-  assign filtered_signal = summed_signal[T-1];
-  assign DUT_IF.filtered_signal = filtered_signal[31:16];
+  //assign filtered_signal = summed_signal[T-1];
+  assign DUT_IF.filtered_signal = summed_signal[T-1];
   
   initial begin 
-    $readmemb("binary_coefficients2.txt" , coeff);
+    $readmemh("fir_coeff.txt" , coeff);
     end 
     
 endmodule

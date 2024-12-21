@@ -25,3 +25,4 @@ module transposed_block(clk , reset ,normal_signal ,coeff,to_register, summed_si
 	assign summed_signal = mul + delayed_signal ;
 endmodule
 
+
