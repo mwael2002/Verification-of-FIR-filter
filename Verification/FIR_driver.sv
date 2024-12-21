@@ -6,13 +6,15 @@
 import uvm_pkg::*;
 
 `include "FIR_seq_item.sv"
-import FIR_config_test::FIR_config_test;
+import FIR_config_intf_pkg::*;
+import FIR_config_intf_pkg::*;
 
-class FIR_driver extends uvm_driver;
+class FIR_driver extends uvm_driver#(FIR_seq_item);
+
     `uvm_component_utils(FIR_driver)
 
-    uvm_analysis_port driver_port;
     virtual FIR_interface FIR_IF_driver;
+    FIR_seq_item driver_seq_item;
 
     function new(string name, uvm_component parent);
         super.new(name, parent);
@@ -21,9 +23,31 @@ class FIR_driver extends uvm_driver;
     function void build_phase(uvm_phase phase);
         
         super.build_phase(phase);
-        driver_port=new("driver_port",this);
 
     endfunction
+
+    task run_phase(uvm_phase phase);
+        super.run_phase(phase);
+        
+        forever begin
+        driver_seq_item=FIR_seq_item::type_id::create("driver_seq_item");
+        seq_item_port.get_next_item(driver_seq_item);
+
+
+        foreach (driver_seq_item.noisy_signal[i]) begin
+
+                FIR_IF_driver.reset=driver_seq_item.reset;
+                FIR_IF_driver.noisy_signal=driver_seq_item.noisy_signal[i];
+                //`uvm_info("DRIVER",$sformatf("Driver: , Noisy signal: %0d  ",driver_seq_item.noisy_signal[i]),UVM_LOW) 
+                @(negedge FIR_IF_driver.clk);
+        end
+
+        seq_item_port.item_done();
+
+        end
+
+    endtask
+
 
 endclass
 

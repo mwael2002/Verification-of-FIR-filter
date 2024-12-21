@@ -30,9 +30,10 @@ class FIR_agent extends uvm_agent;
         agent_monitor=FIR_monitor::type_id::create("FIR_monitor",this);
         agent_sequencer=FIR_sequencer::type_id::create("FIR_sequencer",this);
         agent_config_obj=FIR_config_test::type_id::create("agent_config_obj");
+        agent_port=new("agent_port",this);
 
         if(!uvm_config_db #(FIR_config_test):: get(this,"","FIR_CFG",agent_config_obj))
-        `uvm_fatal("build_phase","test cannot get virtual DUT interface")
+        `uvm_fatal("build_phase","agent cannot get config object")
 
     endfunction
 
@@ -40,9 +41,9 @@ class FIR_agent extends uvm_agent;
         
         super.connect_phase(phase);
         agent_driver.FIR_IF_driver=agent_config_obj.FIR_IF_config;
-        agent_driver.FIR_IF_mon=agent_config_obj.FIR_IF_config;
-        agent_port.connect(agent_monitor.mon_port);
-        agent_driver.driver_port.connect(agent_sequencer.sqr_export);
+        agent_monitor.FIR_IF_mon=agent_config_obj.FIR_IF_config;
+        agent_monitor.mon_port.connect(agent_port);
+        agent_driver.seq_item_port.connect(agent_sequencer.seq_item_export);
         
     endfunction
 
