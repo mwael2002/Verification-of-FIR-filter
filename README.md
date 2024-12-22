@@ -1,6 +1,6 @@
 # Verification-of-FIR-filter
 ## Abstract
-### Build a Matlab FIR Lowpass filter Golden Model and generating 4 input signals 3 of them is sine waves with different frequencies and the fourth is an audio signal obtained from (can_recording.wav) audio.
+### Build a Matlab FIR Lowpass filter Golden Model and generating 4 input signals 3 of them are sine waves with different frequencies and the fourth is an audio signal obtained from (can_recording.wav) audio.
 ### Add additive white gaussian noise to all the signals.
 ### Build full UVM environment that has 4 sequence items each one takes one generated signal from Matlab
 ### Compare the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
