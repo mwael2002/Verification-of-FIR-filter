@@ -10,7 +10,7 @@
 ### Matlab converts both the output golden & DUT audios into wav audio file in order to can hear them.  
 ### Scoreboard & Coverage collector wotks on the MSB 16 bits of the filtered signal.
 ## Project running Steps
-### 1- Run (run_script.py) script, It will open Matlab and run Matlab script that will generate the golden inputs and outputs values in a txt files in addition to (audio.wav) file.
+### 1- Run (run_script.py) script, It will open Matlab and run Matlab script that will generate the golden inputs and outputs values in a txt files in addition to (filtered_audio.wav) file.
 ### 2- After you close Matlab window, the python script will automatically open Questasim and run tcl script to run the project.
 ### 3- When Questa project finish running and Questa is closed, the script will automatically run second Matlab script to convert the DUT output audio txt file that was produced by Questa into wav file.
 ## Matlab plots
@@ -21,10 +21,10 @@
 ### 500 Hz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015813.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015842.png)
-### 1KHz input & output
+### 1 KHz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015823.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015851.png)
-### 3KHz input & output
+### 3 KHz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20024424.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015859.png)
 ### Audio input & output
