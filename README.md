@@ -14,8 +14,8 @@
 ### 2- After you close Matlab window, the python script will automatically open Questasim and run tcl script to run the project.
 ### 3- When Questa project finish running and Questa is closed, the script will automatically run second Matlab script to convert the DUT output audio txt file that was produced by Questa into wav file.
 ## Matlab plots
-### Filter frequency response
-![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015648.png)
+### Frequency response
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015657.png)
 ### Z plane
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015657.png)
 ### 500 Hz input & output
