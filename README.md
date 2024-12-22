@@ -2,7 +2,7 @@
 ## Abstract
 ### Build a Matlab FIR Lowpass filter Golden Model and generating 4 input signals 3 of them is sine waves with different frequencies and the fourth is an audio signal obtained from (can_recording.wav) audio.
 ### Add additive white gaussian noise to all the signals.
-### Build full UVM environment that has of 4 sequence items each one takes one generated signal from Matlab
+### Build full UVM environment that has 4 sequence items each one takes one generated signal from Matlab
 ### Compare the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
 ## Notes
 ### The three signals have frequencies 500 Hz, 1KHz and 3KHz.
