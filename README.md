@@ -11,7 +11,7 @@
 ## Project running Steps
 ### 1- Run (run_script.py) script, It will open Matlab and run Matlab script that will generate the golden inputs and outputs values in a txt files in addition to audio.wav file.
 ### 2- After you close Matlab window, the python script will automatically open Questasim and run tcl script to run the project.
-### 3- When Questa project finish running and Questa is closed, the script will automatically run second Matlab script to convert the DUT output audio txt file produced by Questa into (wav) file.
+### 3- When Questa project finish running and Questa is closed, the script will automatically run second Matlab script to convert the DUT output audio txt file that was produced by Questa into (wav) file.
 ## Matlab plots
 ### 1- 500 Hz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185707.png)
