@@ -8,6 +8,7 @@
 ### The three signals have frequencies 500 Hz, 1KHz and 3KHz.
 ### The filter cutoff frequency is 1 KHz.
 ### Matlab converts both the output golden & DUT audios into wav audio file in order to can hear them.  
+### Scoreboard & Coverage collector wotks on the MSB 16 bits of the filtered signal.
 ## Project running Steps
 ### 1- Run (run_script.py) script, It will open Matlab and run Matlab script that will generate the golden inputs and outputs values in a txt files in addition to (audio.wav) file.
 ### 2- After you close Matlab window, the python script will automatically open Questasim and run tcl script to run the project.
