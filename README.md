@@ -1,11 +1,18 @@
 # Verification-of-FIR-filter
-### Building a Matlab FIR Lowpass filter Golden Model and generating 3 input noisy signals each one of different frequency. 
-### Building full UVM environment that has of 3 sequence items each one takes one generated signal from Matlab
-### Comparing the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
-### The three signals have frequencies 0.5KHz, 1KHz and 3KHz.
-### The filter has cutoff frequency of 1KHz
-## Until now, The Matlab model has finished and The verification environment build phase
-## These are the plots of the inputs and the outputs of Matlab:
+## Abstract
+### Build a Matlab FIR Lowpass filter Golden Model and generating 4 input signals 3 of them is sine waves with different frequencies and the fourth is an audio signal obtained from audio recording.
+### Add additive white gaussian noise to all the signals.
+### Build full UVM environment that has of 4 sequence items each one takes one generated signal from Matlab
+### Compare the output with the output from the Golden Model in the Scoreboard along with code & functional coverage.
+## Notes
+### The three signals have frequencies 500 Hz, 1KHz and 3KHz.
+### The filter cutoff frequency is 1 KHz.
+### Matlab converts both the output golden & DUT audios into (wav) audio file in order to can hear them.  
+## Project running Steps
+### 1- Run (run_script.py) script, It will open Matlab and run Matlab script that will generate the golden inputs and outputs values in a txt files in addition to audio.wav file.
+### 2- After you close Matlab window, the python script will automatically open Questasim and run tcl script to run the project.
+### 3- When Questa project finish running and Questa is closed, the script will automatically run second Matlab script to convert the DUT output audio txt file produced by Questa into (wav) file.
+## Matlab plots
 ### 1- 500 Hz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185707.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185745.png)
@@ -15,3 +22,4 @@
 ### 3- 3KHz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185727.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-08-10%20185851.png)
+### 
