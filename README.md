@@ -30,3 +30,8 @@
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015706.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015757.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015804.png)
+## Questasim plots
+### Sine wave signals
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20023656.png)
+### Audio signal
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20023823.png)
