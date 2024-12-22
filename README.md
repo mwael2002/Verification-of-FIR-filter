@@ -23,7 +23,7 @@
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015842.png)
 ### 1 KHz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015823.png)
-![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015851.png)
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20161414.png)
 ### 3 KHz input & output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20024424.png)
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20015859.png)
