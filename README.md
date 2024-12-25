@@ -44,6 +44,6 @@
 ### Transcript output
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005448.png)
 ### Code Coverage
-![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005409.png)
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005916.png)
 ### Functional coverage
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005409.png)
