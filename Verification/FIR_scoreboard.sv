@@ -49,8 +49,9 @@ class FIR_scoreboard extends uvm_scoreboard;
         
         int file_handle,file_handle_2,sig_length,dut_int_point,golden_int_point;
         int error_count=0;   
-        real golden_filtered_signal_point,dut_filtered_signal_point;            
-        
+        real golden_filtered_signal_point,dut_filtered_signal_point;
+        real x_2=0,x_noise=0,snr;            
+        int f;
 
         sc_seq_item=FIR_seq_item::type_id::create("sc_seq_item",this);
 
@@ -74,7 +75,7 @@ class FIR_scoreboard extends uvm_scoreboard;
         for (int i=0;i<sig_length;i++) begin
 
             $fscanf(file_handle,"%f",golden_filtered_signal_point);
-
+            
             // Round golden point to the nearest integer
             golden_int_point=$rtoi(golden_filtered_signal_point*1000+0.5);
             
@@ -104,19 +105,20 @@ class FIR_scoreboard extends uvm_scoreboard;
             if(j==3) begin          
             $fdisplay(file_handle_2,dut_filtered_signal_point);
             end
-        end 
+         end
 
-        if (j==3)
-        $fclose(file_handle_2);
-
-         if((error_count/sig_length)>0.1) begin
-            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: The number of different points between DUT and Golden exceeds 10%% of the signal total points,
+         if((error_count*1.0/sig_length)>0.06) begin
+            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: The number of different points between DUT and Golden exceeds 6%% of the signal total points,
             error points= %0d and total signal points= %0d",j,error_count,sig_length))
         end
 
         else begin
-            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully with no errors",j),UVM_MEDIUM);     
+            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully with no errors, error percentage = %f",j,(error_count*100.0/sig_length)),UVM_MEDIUM);     
         end
+        
+
+        if (j==3)
+        $fclose(file_handle_2);
 
         $fclose(file_handle);
         // open the file again in write mode to clear data in it
