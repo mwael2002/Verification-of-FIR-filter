@@ -42,7 +42,7 @@
 ### Audio signal
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20023823.png)
 ### Transcript output
-![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005448.png)
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202025-11-15%20180704.png)
 ### Code Coverage
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-24%20005916.png)
 ### Functional coverage
