@@ -13,7 +13,7 @@ class FIR_coverage extends uvm_component;
     logic reset; 
     logic signed [N-1:0] noisy_signal;
     // Array of output signal points
-    logic signed [N-1:0] filtered_signal;
+    logic signed [2*N-1:0] filtered_signal;
 
     uvm_analysis_export #(FIR_seq_item) cov_export;
     uvm_tlm_analysis_fifo #(FIR_seq_item) cov_fifo ;
@@ -27,8 +27,8 @@ class FIR_coverage extends uvm_component;
     }
     c_filtered_signal: coverpoint this.filtered_signal{
         option.auto_bin_max=512;
-        ignore_bins ignore_range_pos []= {[signed'(16'b0010_0000_0000_0000):signed'(16'b0111_1111_1111_1111)]};
-        ignore_bins ignore_range_neg []= {[signed'(16'b1000_0000_0000_0000):signed'(16'b1110_0000_0000_0000)]};
+        ignore_bins ignore_range_pos = {[signed'(32'h2000_0000):signed'(32'h7FFF_FFFF)]};
+        ignore_bins ignore_range_neg = {[signed'(32'h8000_0000):signed'(32'hE000_0000)]};
     }
     
     endgroup
@@ -69,7 +69,7 @@ class FIR_coverage extends uvm_component;
                 for (i=0; i<sig_length;i++) begin
                     this.reset=cov_seq_item.reset;
                     this.noisy_signal=cov_seq_item.noisy_signal[i];
-                    this.filtered_signal=cov_seq_item.filtered_signal[i][2*N-1:N];
+                    this.filtered_signal=cov_seq_item.filtered_signal[i];
                     this.c1.sample();
 
                 end
@@ -79,4 +79,4 @@ class FIR_coverage extends uvm_component;
 
 endclass
 
-`endif // FIR_COVERAGE_SV
+`endif
