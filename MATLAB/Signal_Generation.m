@@ -15,11 +15,9 @@ t = 0:1/sampling_rate:0.005;
 t_audio=0:1/sampling_rate:(length(audio_sig)-1)*1/sampling_rate;
 
 %noise
-%noise = (0.5*sin(2*pi*30000*t)).*(0.8*cos(2*pi*40000*t));
 noise = normrnd(0, sqrt(0.09), 1, length(t)); % Generate AWGN with variance 0.09
 
 % Generate signals
-%noise_audio = (0.5*sin(2*pi*30000*t_audio)).*(0.8*cos(2*pi*40000*t_audio));
 noise_audio = normrnd(0, sqrt(0.09), 1, length(t_audio));
 audio_noisy=transpose(audio_sig)+noise_audio;
 
@@ -160,7 +158,6 @@ title('Filtered 3 KHz signal')
          
 
  
-
 
 
 
