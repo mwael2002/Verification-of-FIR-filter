@@ -10,7 +10,7 @@ import FIR_config_output_pkg::*;
 class FIR_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(FIR_scoreboard)
 
-    parameter N=16;
+    parameter N=16,int_part=(2*N-3);
 
     uvm_analysis_export #(FIR_seq_item) sb_export;
     uvm_tlm_analysis_fifo #(FIR_seq_item) sb_fifo ;
@@ -77,11 +77,11 @@ class FIR_scoreboard extends uvm_scoreboard;
             $fscanf(file_handle,"%f",golden_filtered_signal_point);
             
             // Round golden point to the nearest integer
-            golden_int_point=$rtoi(golden_filtered_signal_point*1000+0.5);
+            golden_int_point=$rtoi(golden_filtered_signal_point*100+0.5);
             
             // Convert dut signal into real type then round it same as golden
-            dut_filtered_signal_point=(sc_seq_item.filtered_signal[i]*1.0/(30'b10_0000_0000_0000_0000_0000_0000_0000));
-            dut_int_point=$rtoi(dut_filtered_signal_point * 1000+0.5);         
+            dut_filtered_signal_point=(sc_seq_item.filtered_signal[i]*1.0/({1'b1,{int_part{1'b0}}}));
+            dut_int_point=$rtoi(dut_filtered_signal_point * 100+0.5);         
             
             // Check 0 case in any signal
             if((golden_int_point===0)||(dut_int_point===0))
@@ -95,7 +95,7 @@ class FIR_scoreboard extends uvm_scoreboard;
             else
             begin
                 
-                if(((dut_int_point*1.0/golden_int_point)<0.99) || ((dut_int_point*1.0/golden_int_point)>1.01))
+                if(golden_int_point!==dut_int_point)
                 begin                
                     error_count++;
                 end 
@@ -107,13 +107,13 @@ class FIR_scoreboard extends uvm_scoreboard;
             end
          end
 
-         if((error_count*1.0/sig_length)>0.06) begin
-            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: The number of different points between DUT and Golden exceeds 6%% of the signal total points,
-            error points= %0d and total signal points= %0d",j,error_count,sig_length))
+         if((error_count*1.0/sig_length)>0.03) begin
+            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: The number of different points between DUT and Golden exceeds 3%% of the signal total points,
+            error points= %0d and total signal points= %0d, error percentage = %f",j,error_count,sig_length,(error_count*100.0/sig_length)))
         end
 
         else begin
-            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully with no errors, error percentage = %f",j,(error_count*100.0/sig_length)),UVM_MEDIUM);     
+            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully with error percentage less than 3%%, error percentage = %f",j,(error_count*100.0/sig_length)),UVM_MEDIUM);     
         end
         
 
