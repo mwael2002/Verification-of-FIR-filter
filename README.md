@@ -41,8 +41,8 @@
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20023656.png)
 ### Audio signal
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202024-12-22%20023823.png)
-### Transcript output
-![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202025-11-15%20180704.png)
+### Log
+![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202026-02-23%20102612.png)
 ### Code Coverage
 ![Alt text](https://github.com/mwael2002/Verification-of-FIR-filter/blob/main/Screenshot%202026-02-20%20142708.png)
 ### Functional coverage
