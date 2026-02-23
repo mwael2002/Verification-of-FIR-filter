@@ -10,7 +10,7 @@ import FIR_config_output_pkg::*;
 class FIR_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(FIR_scoreboard)
 
-    parameter N=16,int_part=(2*N-3);
+    parameter N=16,frac_part=(2*N-3);
 
     uvm_analysis_export #(FIR_seq_item) sb_export;
     uvm_tlm_analysis_fifo #(FIR_seq_item) sb_fifo ;
@@ -44,7 +44,7 @@ class FIR_scoreboard extends uvm_scoreboard;
 
 	 forever begin
             
-        static string file_names[4]={"output_sig_half_KHz.txt","output_sig_1_KHz.txt","output_sig_3_KHz.txt","output_audio.txt"};
+        string file_names[4]={"output_sig_half_KHz.txt","output_sig_1_KHz.txt","output_sig_3_KHz.txt","output_audio.txt"};
         static int j=0;
         
         int file_handle,file_handle_2,sig_length,dut_int_point,golden_int_point;
@@ -76,57 +76,45 @@ class FIR_scoreboard extends uvm_scoreboard;
 
             $fscanf(file_handle,"%f",golden_filtered_signal_point);
             
-            // Round golden point to the nearest integer
-            golden_int_point=$rtoi(golden_filtered_signal_point*100+0.5);
+            // Round golden point to it 4 decimals after point
+            golden_int_point=$rtoi(golden_filtered_signal_point*10000);
             
-            // Convert dut signal into real type then round it same as golden
-            dut_filtered_signal_point=(sc_seq_item.filtered_signal[i]*1.0/({1'b1,{int_part{1'b0}}}));
-            dut_int_point=$rtoi(dut_filtered_signal_point * 100+0.5);         
-            
-            // Check 0 case in any signal
-            if((golden_int_point===0)||(dut_int_point===0))
-            begin
-                if(golden_int_point!==dut_int_point)
-                begin
-                    error_count++;
-                end
-            end
-            
-            else
-            begin
+            // Convert dut signal into real type then round it 4 decimals after point
+            dut_filtered_signal_point=(sc_seq_item.filtered_signal[i]*1.0/({1'b1,{frac_part{1'b0}}}));
+            dut_int_point=$rtoi(dut_filtered_signal_point * 10000);         
                 
-                if(golden_int_point!==dut_int_point)
+                if((golden_int_point>dut_int_point && (golden_int_point-dut_int_point>3)) ||
+                   (dut_int_point>golden_int_point && (dut_int_point-golden_int_point>3)))
                 begin                
                     error_count++;
                 end 
-      
-            end
             
             if(j==3) begin          
             $fdisplay(file_handle_2,dut_filtered_signal_point);
             end
          end
 
-         if((error_count*1.0/sig_length)>0.03) begin
-            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: The number of different points between DUT and Golden exceeds 3%% of the signal total points,
-            error points= %0d and total signal points= %0d, error percentage = %f",j,error_count,sig_length,(error_count*100.0/sig_length)))
+         if(error_count>0) begin
+            `uvm_error("OUTPUT COMPARISON_FAIL",$sformatf("In signal no. %0d: There are %0d points have difference between DUT and Golden exceeds 0.03%% ,total signal points = %0d, (number of wrong points / total signal points) percentage  = %f",j,error_count,sig_length,(error_count*100.0/sig_length)))
         end
 
         else begin
-            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully with error percentage less than 3%%, error percentage = %f",j,(error_count*100.0/sig_length)),UVM_MEDIUM);     
+            `uvm_info("OUTPUT COMPARISON_SUCCESS",$sformatf("Scoreboaed compared signal no. %0d successfully, all points have difference between DUT and Golden less than 0.03%%",j),UVM_MEDIUM) 
         end
         
 
         if (j==3)
         $fclose(file_handle_2);
-
+        
+        else begin
         $fclose(file_handle);
-        // open the file again in write mode to clear data in it
+
+        // Open file & close it to erase it
         file_handle=$fopen(file_names[j],"w");
         $fclose(file_handle);
-        j++;
-        
+        end
 
+        j++;
      end
     endtask
 
