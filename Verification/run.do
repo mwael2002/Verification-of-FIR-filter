@@ -1,8 +1,8 @@
 vlib work
-vlog transposed_block.v FIR_transposed.sv FIR_interface.sv FIR_seq_item.sv FIR_config.sv FIR_driver.sv  FIR_agent.sv FIR_monitor.sv FIR_scoreboard.sv  \
-FIR_coverage.sv FIR_sequence.sv FIR_sequencer.sv FIR_env.sv FIR_test.sv Top_module.sv +cover
+vmap work work
+vlog *.v *.sv +cover -covercells 
 
-vsim -voptargs=+acc work.Top_module -classdebug -uvmcontrol=all -coverage 
+vsim -voptargs=+acc work.Top_module -classdebug -uvmcontrol=all -coverage -onfinish stop
 
 add wave -position insertpoint  \
 sim:/Top_module/FIR_IF/reset \
@@ -12,6 +12,8 @@ sim:/Top_module/FIR_IF/clk
 
 
 run -all
-coverage save FIR.ucdb -du Top_module 
-#-du Top_module/DUT/ 
-vcover report FIR.ucdb -details -annotate -all -output coverage_rpt.txt
+coverage save FIR_code_cov.ucdb -instance DUT
+coverage save FIR_func_cov.ucdb -cvg
+ 
+vcover report FIR_code_cov.ucdb -details -annotate -all -output code_coverage_rpt.txt
+vcover report FIR_func_cov.ucdb -details -annotate -all -output func_coverage_rpt.txt
