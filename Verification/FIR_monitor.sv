@@ -7,7 +7,6 @@ import uvm_pkg::*;
 
 `include "FIR_seq_item.sv"
 import FIR_config_intf_pkg::*;
-import FIR_config_output_pkg::*;
 
 
 class FIR_monitor extends uvm_monitor;
@@ -16,18 +15,12 @@ class FIR_monitor extends uvm_monitor;
     virtual FIR_interface FIR_IF_mon;
     uvm_analysis_port #(FIR_seq_item) mon_port;
     FIR_seq_item mon_seq_item;
-    FIR_config_output mon_config_output;
 
     function new(string name, uvm_component parent);
         super.new(name, parent);
+        mon_port=new("mon_port",this);
     endfunction
 
-    function void build_phase(uvm_phase phase);
-        
-            super.build_phase(phase);
-            mon_port=new("mon_port",this);
-
-    endfunction
 
     task run_phase(uvm_phase phase);
         
@@ -35,11 +28,7 @@ class FIR_monitor extends uvm_monitor;
         super.run_phase(phase);
         
         forever begin
-      
-        mon_config_output=FIR_config_output::type_id::create("mon_config_output");
         mon_seq_item=FIR_seq_item::type_id::create("mon_seq_item");
-
-
         sig_length=$size(mon_seq_item.noisy_signal);
 
         for (int i=0;i<sig_length;i++) begin

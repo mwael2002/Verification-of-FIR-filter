@@ -76,6 +76,7 @@ class FIR_seq_item extends uvm_sequence_item;
 
         $fclose(file_handle);
   
+        // Open file & close it to erase it
         file_handle=$fopen(file_name,"w");
         $fclose(file_handle);
 

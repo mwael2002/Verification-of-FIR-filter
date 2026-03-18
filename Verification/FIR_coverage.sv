@@ -36,16 +36,9 @@ class FIR_coverage extends uvm_component;
     function new(string name, uvm_component parent);
         super.new(name, parent);
         this.c1=new();
-    endfunction
-
-    function void build_phase(uvm_phase phase);
-        
-        super.build_phase(phase);
-
         cov_fifo=new("cov_fifo",this);
         cov_export=new("cov_export",this);
         cov_seq_item=FIR_seq_item::type_id::create("cov_seq_item",this);
-
     endfunction
 
 
@@ -60,7 +53,6 @@ class FIR_coverage extends uvm_component;
             super.run_phase(phase);
             
 
-	        //`uvm_info("run_phase","coverage run phase has started",UVM_LOW);
             forever begin
                 int i,sig_length;
 	            cov_fifo.get(cov_seq_item);

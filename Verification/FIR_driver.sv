@@ -7,7 +7,6 @@ import uvm_pkg::*;
 
 `include "FIR_seq_item.sv"
 import FIR_config_intf_pkg::*;
-import FIR_config_intf_pkg::*;
 
 class FIR_driver extends uvm_driver#(FIR_seq_item);
 
@@ -38,7 +37,6 @@ class FIR_driver extends uvm_driver#(FIR_seq_item);
 
                 FIR_IF_driver.reset=driver_seq_item.reset;
                 FIR_IF_driver.noisy_signal=driver_seq_item.noisy_signal[i];
-                //`uvm_info("DRIVER",$sformatf("Driver: , Noisy signal: %0d  ",driver_seq_item.noisy_signal[i]),UVM_LOW) 
                 @(negedge FIR_IF_driver.clk);
         end
 

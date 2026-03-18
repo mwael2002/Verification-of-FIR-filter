@@ -5,7 +5,6 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "FIR_seq_item.sv"
-import FIR_config_output_pkg::*;
 
 class FIR_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(FIR_scoreboard)
@@ -15,20 +14,11 @@ class FIR_scoreboard extends uvm_scoreboard;
     uvm_analysis_export #(FIR_seq_item) sb_export;
     uvm_tlm_analysis_fifo #(FIR_seq_item) sb_fifo ;
     FIR_seq_item sc_seq_item;
-    FIR_config_output seq_config_output;
 
     function new(string name, uvm_component parent);
         super.new(name, parent);
-    endfunction
-
-    function void build_phase(uvm_phase phase);
-        
-        super.build_phase(phase);
-
         sb_fifo=new("sb_fifo",this);
         sb_export=new("sb_export",this);
-        seq_config_output=FIR_config_output::type_id::create("seq_config_output_scoreboard");
-
     endfunction
 
 

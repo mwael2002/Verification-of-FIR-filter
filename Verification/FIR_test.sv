@@ -35,9 +35,9 @@ class FIR_test extends uvm_test;
     test_config_obj = FIR_config_test::type_id::create("test_config_obj");
 
         if(!uvm_config_db #(virtual FIR_interface):: get(this,"","FIR_INTF",test_config_obj.FIR_IF_config))
-        `uvm_fatal("build_phase","test cannot get virtual DUT interface")
+        `uvm_fatal("BUILD_PHASE","test cannot get virtual DUT interface")
 
-        uvm_config_db #(FIR_config_test)::set(this,"*","FIR_CFG",test_config_obj);
+        uvm_config_db #(FIR_config_test)::set(this,"env.ag","FIR_CFG",test_config_obj);
 
     `uvm_info("BUILD_PHASE", "Ending build_phase", UVM_LOW)
 

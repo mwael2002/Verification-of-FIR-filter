@@ -12,7 +12,6 @@ import FIR_config_output_pkg::*;
 class FIR_sequence extends uvm_sequence #(FIR_seq_item);
     `uvm_object_utils(FIR_sequence)
 
-    FIR_config_output seq_config_output;
 
     FIR_seq_item reset_seq_item;
     FIR_seq_item freq_1_KHz_seq_item;
@@ -26,8 +25,6 @@ class FIR_sequence extends uvm_sequence #(FIR_seq_item);
 
     task body;
 
-    seq_config_output=FIR_config_output::type_id::create("seq_config_output");
-
     reset_seq_item=FIR_seq_item::type_id::create("seq_item_reset");
     freq_half_KHz_seq_item=FIR_seq_item::type_id::create("seq_item_half_KHz");
     freq_1_KHz_seq_item=FIR_seq_item::type_id::create("seq_item_1_KHz");
@@ -35,15 +32,10 @@ class FIR_sequence extends uvm_sequence #(FIR_seq_item);
     audio_seq_item=FIR_seq_item::type_id::create("audio_seq_item");
 
     /**********************Reset frequency item***************************************************/
-    seq_config_output.seq_item_state=0;
-    uvm_config_db #(FIR_config_output):: set(null,"*","config_seq_item",seq_config_output);
     
     assert(reset_seq_item.randomize());
     start_item(reset_seq_item);
     finish_item(reset_seq_item);
-
-    seq_config_output.seq_item_state=1;
-    uvm_config_db #(FIR_config_output):: set(null,"*","config_seq_item",seq_config_output);
 
     `uvm_info("SEQ_ITEM", "Reset item has run successfully", UVM_MEDIUM)
 
