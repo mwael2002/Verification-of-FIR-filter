@@ -9,7 +9,7 @@ sampling_rate = double(48000);         % Sampling rate of sine waves in Hz
 [audio_sig] = audioread('can_recording.wav');
 audio_sig = double(audio_sig);
 
-% multiplying audio signal
+% multiplying audio signal by a factor to increase it's amplitude
 audio_sig = double(audio_sig * 7);
 
 % Time vector
@@ -18,6 +18,10 @@ t_audio = double(0:1/sampling_rate:(length(audio_sig)-1)*1/sampling_rate);
 
 % noise
 noise = double(normrnd(0, sqrt(0.09), 1, length(t))); % AWGN
+
+figure
+plot(t,noise);
+
 
 % Generate signals
 noise_audio = double(normrnd(0, sqrt(0.09), 1, length(t_audio)));

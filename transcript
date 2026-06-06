@@ -1,0 +1,157 @@
+# do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 08:12:22 on Mar 18,2026
+# vlog transposed_block.v FIR_agent.sv FIR_config.sv FIR_coverage.sv FIR_driver.sv FIR_env.sv FIR_interface.sv FIR_monitor.sv FIR_scoreboard.sv FIR_seq_item.sv FIR_sequence.sv FIR_sequencer.sv FIR_test.sv FIR_transposed.sv Top_module.sv test.sv "+cover" -covercells 
+# -- Compiling module transposed_block
+# ** Note: (vlog-2286) FIR_agent.sv(6): Using implicit +incdir+D:/B/qsim_2021_1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package FIR_agent_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package FIR_config_intf_pkg
+# -- Importing package FIR_config_output_pkg
+# -- Compiling package FIR_config_intf_pkg
+# -- Compiling package FIR_coverage_sv_unit
+# -- Compiling package FIR_driver_sv_unit
+# -- Compiling package FIR_env_sv_unit
+# -- Compiling interface FIR_interface
+# -- Compiling package FIR_monitor_sv_unit
+# -- Compiling package FIR_scoreboard_sv_unit
+# -- Compiling package FIR_seq_item_sv_unit
+# -- Compiling package FIR_sequence_sv_unit
+# -- Compiling package FIR_sequencer_sv_unit
+# -- Compiling package FIR_test_sv_unit
+# -- Compiling module FIR_transposed
+# -- Compiling package Top_module_sv_unit
+# -- Compiling module Top_module
+# -- Compiling module dummy
+# 
+# Top level modules:
+# 	Top_module
+# 	dummy
+# End time: 08:12:23 on Mar 18,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.Top_module -classdebug -uvmcontrol=all -coverage -onfinish stop 
+# Start time: 08:12:23 on Mar 18,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt12
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.FIR_config_output_pkg(fast)
+# Loading work.FIR_interface(fast)
+# Loading work.FIR_config_intf_pkg(fast)
+# Loading work.Top_module_sv_unit(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /Top_module_sv_unit::FIR_seq_item::get_sig File: FIR_seq_item.sv Line: 63
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /Top_module_sv_unit::FIR_seq_item::get_sig File: FIR_seq_item.sv Line: 70
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /Top_module_sv_unit::FIR_scoreboard::run_phase/#ublk#180947492#35/#anonblk#180947492#65#4# File: FIR_scoreboard.sv Line: 67
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.Top_module(fast)
+# Loading work.FIR_interface(fast__2)
+# Loading work.FIR_transposed(fast)
+# Loading work.transposed_block(fast)
+# Loading D:/B/qsim_2021_1/uvm-1.1d\win64\uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mwael  Hostname: MOHAMMAD-LAPTOP  ProcessID: 21280
+#           Attempting to use alternate WLF file "./wlftea1k32".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftea1k32
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# UVM_INFO @ 0: reporter [RNTST] Running test FIR_test...
+# UVM_INFO FIR_test.sv(30) @ 0: uvm_test_top [BUILD_PHASE] Starting build_phase
+# UVM_INFO FIR_test.sv(42) @ 0: uvm_test_top [BUILD_PHASE] Ending build_phase
+# UVM_INFO FIR_test.sv(51) @ 0: uvm_test_top [RUN_PHASE] Starting run_phase
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+# UVM_INFO FIR_sequence.sv(40) @ 4: uvm_test_top.env.ag.FIR_sequencer@@seq [SEQ_ITEM] Reset item has run successfully
+# UVM_INFO FIR_sequence.sv(48) @ 4: uvm_test_top.env.ag.FIR_sequencer@@seq [FILE_READING] First file has been read successfully
+# UVM_INFO FIR_scoreboard.sv(92) @ 968: uvm_test_top.env.sb [OUTPUT COMPARISON_SUCCESS] Scoreboaed compared signal no. 0 successfully, all points have difference between DUT and Golden less than 0.03%
+# UVM_INFO FIR_sequence.sv(54) @ 968: uvm_test_top.env.ag.FIR_sequencer@@seq [SEQ_ITEM] First item has run successfully
+# UVM_INFO FIR_sequence.sv(67) @ 972: uvm_test_top.env.ag.FIR_sequencer@@seq [FILE_READING] Second file has been read successfully
+# UVM_INFO FIR_scoreboard.sv(92) @ 1936: uvm_test_top.env.sb [OUTPUT COMPARISON_SUCCESS] Scoreboaed compared signal no. 1 successfully, all points have difference between DUT and Golden less than 0.03%
+# UVM_INFO FIR_sequence.sv(72) @ 1936: uvm_test_top.env.ag.FIR_sequencer@@seq [SEQ_ITEM] Second item has run successfully
+# UVM_INFO FIR_sequence.sv(86) @ 1940: uvm_test_top.env.ag.FIR_sequencer@@seq [FILE_READING] Third file has been read successfully
+# UVM_INFO FIR_scoreboard.sv(92) @ 2904: uvm_test_top.env.sb [OUTPUT COMPARISON_SUCCESS] Scoreboaed compared signal no. 2 successfully, all points have difference between DUT and Golden less than 0.03%
+# UVM_INFO FIR_sequence.sv(91) @ 2904: uvm_test_top.env.ag.FIR_sequencer@@seq [SEQ_ITEM] Third item has run successfully
+# UVM_INFO FIR_sequence.sv(103) @ 2908: uvm_test_top.env.ag.FIR_sequencer@@seq [FILE_READING] audio file has been read successfully
+# UVM_INFO FIR_scoreboard.sv(92) @ 1538908: uvm_test_top.env.sb [OUTPUT COMPARISON_SUCCESS] Scoreboaed compared signal no. 3 successfully, all points have difference between DUT and Golden less than 0.03%
+# UVM_INFO FIR_sequence.sv(108) @ 1538908: uvm_test_top.env.ag.FIR_sequencer@@seq [SEQ_ITEM] audio item has run successfully
+# UVM_INFO FIR_test.sv(57) @ 1538908: uvm_test_top [RUN_PHASE] Ending run_phase
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1538908: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   21
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BUILD_PHASE]     2
+# [FILE_READING]     4
+# [OUTPUT COMPARISON_SUCCESS]     4
+# [Questa UVM]     2
+# [RNTST]     1
+# [RUN_PHASE]     2
+# [SEQ_ITEM]     5
+# [TEST_DONE]     1
+# ** Note: $finish    : D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1538908 ns  Iteration: 61  Instance: /Top_module
+# Break in Task uvm_pkg/uvm_root::run_test at D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# Stopped at D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 08:14:11 on Mar 18,2026
+# vcover report FIR_code_cov.ucdb -details -annotate -all -output code_coverage_rpt.txt 
+# End time: 08:14:11 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 08:14:11 on Mar 18,2026
+# vcover report FIR_func_cov.ucdb -details -annotate -all -output func_coverage_rpt.txt 
+# End time: 08:14:11 on Mar 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:14:36 on Mar 18,2026, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 5
