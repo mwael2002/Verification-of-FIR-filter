@@ -1,0 +1,715 @@
+# Current time Thu Dec 19 00:12:10 2024
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# Current time Fri Feb 20 08:01:30 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:04:33 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:05:30 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:09:54 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:16:33 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:17:40 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:18:40 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x000000014237bc06: '<unknown (@0x14237bc06)>'
+# 1    0x000000014237bb35: '<unknown (@0x14237bb35)>'
+# 2    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 3    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 4    0x0000000142397425: '<unknown (@0x142397425)>'
+# 5    0x0000000142391419: '<unknown (@0x142391419)>'
+# 6    0x00007ff4f811fb91: 'FIR_coverage.sv:22'
+# 7    0x00007ff4f811ecd5: 'FIR_coverage.sv:38'
+# 8    0x00007ff4f811ee34: 'FIR_coverage.sv:36'
+# 9    0x00007ff4f8102d90: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 10   0x00007ff4f6ee6e29: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 11   0x00007ff4f81039c2: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 12   0x00007ff4f81040e6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 13   0x00007ff4f8129e61: 'FIR_env.sv:29'
+# 14   0x00007ff4f7c3a4c7: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 15   0x00007ff4f7c37f56: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 16   0x00007ff4f7c3731e: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 17   0x00007ff4f7c37834: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 18   0x00007ff4f7c37834: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 19   0x00007ff4f7c19bb1: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 20   0x00007ff4f7c189c0: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 21   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 22   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 23   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 24   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 25   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:19:33 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:22:26 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:23:36 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:25:06 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:25:06 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:25:06 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:25:06 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:29:36 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:30:41 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:31:30 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:32:41 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:32:50 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x000000014237bc06: '<unknown (@0x14237bc06)>'
+# 1    0x000000014237bb35: '<unknown (@0x14237bb35)>'
+# 2    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 3    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 4    0x0000000142397425: '<unknown (@0x142397425)>'
+# 5    0x0000000142391419: '<unknown (@0x142391419)>'
+# 6    0x00007ff4f811fb30: 'FIR_coverage.sv:22'
+# 7    0x00007ff4f811ecb5: 'FIR_coverage.sv:38'
+# 8    0x00007ff4f811ee14: 'FIR_coverage.sv:36'
+# 9    0x00007ff4f8102d70: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 10   0x00007ff4f6ee6e29: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 11   0x00007ff4f81039a2: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 12   0x00007ff4f81040c6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 13   0x00007ff4f8129d61: 'FIR_env.sv:29'
+# 14   0x00007ff4f7c3a497: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 15   0x00007ff4f7c37f26: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 16   0x00007ff4f7c372ee: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 17   0x00007ff4f7c37804: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 18   0x00007ff4f7c37804: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 19   0x00007ff4f7c19b71: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 20   0x00007ff4f7c18980: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 21   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 22   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 23   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 24   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 25   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:34:20 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:34:28 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:35:22 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:48:17 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:48:55 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:50:55 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x000000014237bbf8: '<unknown (@0x14237bbf8)>'
+# 1    0x000000014237bb35: '<unknown (@0x14237bb35)>'
+# 2    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 3    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 4    0x0000000142397425: '<unknown (@0x142397425)>'
+# 5    0x0000000142391419: '<unknown (@0x142391419)>'
+# 6    0x00007ff4f811fb21: 'FIR_coverage.sv:22'
+# 7    0x00007ff4f811ec65: 'FIR_coverage.sv:38'
+# 8    0x00007ff4f811edc4: 'FIR_coverage.sv:36'
+# 9    0x00007ff4f8102d20: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 10   0x00007ff4f6ee6e39: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 11   0x00007ff4f8103952: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 12   0x00007ff4f8104076: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 13   0x00007ff4f8129df1: 'FIR_env.sv:29'
+# 14   0x00007ff4f7c3a427: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 15   0x00007ff4f7c37eb6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 16   0x00007ff4f7c3727e: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 17   0x00007ff4f7c37794: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 18   0x00007ff4f7c37794: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 19   0x00007ff4f7c19b01: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 20   0x00007ff4f7c18910: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 21   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 22   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 23   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 24   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 25   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:51:45 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:51:55 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:52:44 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:53:09 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x00000001420c3d32: '<unknown (@0x1420c3d32)>'
+# 1    0x00000001420bfbf7: '<unknown (@0x1420bfbf7)>'
+# 2    0x000000014237887c: '<unknown (@0x14237887c)>'
+# 3    0x0000000142378edc: '<unknown (@0x142378edc)>'
+# 4    0x000000014237bae8: '<unknown (@0x14237bae8)>'
+# 5    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 6    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 7    0x0000000142397425: '<unknown (@0x142397425)>'
+# 8    0x0000000142391419: '<unknown (@0x142391419)>'
+# 9    0x00007ff4f811fbd1: 'FIR_coverage.sv:22'
+# 10   0x00007ff4f811ed15: 'FIR_coverage.sv:38'
+# 11   0x00007ff4f811ee74: 'FIR_coverage.sv:36'
+# 12   0x00007ff4f8102dd0: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 13   0x00007ff4f6ee6e39: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 14   0x00007ff4f8103a02: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 15   0x00007ff4f8104126: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 16   0x00007ff4f8129e31: 'FIR_env.sv:29'
+# 17   0x00007ff4f7c3a4c7: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 18   0x00007ff4f7c37f56: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 19   0x00007ff4f7c3731e: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 20   0x00007ff4f7c37834: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 21   0x00007ff4f7c37834: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 22   0x00007ff4f7c19b81: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 23   0x00007ff4f7c18990: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 24   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 25   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 26   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 27   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 28   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:55:54 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 08:59:14 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:27:17 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:27:49 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x00000001420c3d32: '<unknown (@0x1420c3d32)>'
+# 1    0x00000001420bfbf7: '<unknown (@0x1420bfbf7)>'
+# 2    0x000000014237887c: '<unknown (@0x14237887c)>'
+# 3    0x0000000142378edc: '<unknown (@0x142378edc)>'
+# 4    0x000000014237bae8: '<unknown (@0x14237bae8)>'
+# 5    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 6    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 7    0x0000000142397425: '<unknown (@0x142397425)>'
+# 8    0x0000000142391419: '<unknown (@0x142391419)>'
+# 9    0x00007ff4f811fb51: 'FIR_coverage.sv:22'
+# 10   0x00007ff4f811ec95: 'FIR_coverage.sv:38'
+# 11   0x00007ff4f811edf4: 'FIR_coverage.sv:36'
+# 12   0x00007ff4f8102d50: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 13   0x00007ff4f6ee6e39: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 14   0x00007ff4f8103982: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 15   0x00007ff4f81040a6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 16   0x00007ff4f8129db1: 'FIR_env.sv:29'
+# 17   0x00007ff4f7c3a4b7: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 18   0x00007ff4f7c37f46: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 19   0x00007ff4f7c3730e: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 20   0x00007ff4f7c37824: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 21   0x00007ff4f7c37824: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 22   0x00007ff4f7c19b81: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 23   0x00007ff4f7c18990: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 24   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 25   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 26   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 27   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 28   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:32:05 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:32:39 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:35:10 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:35:43 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:36:21 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:36:34 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:36:55 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:37:08 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:38:12 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:38:26 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:39:11 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:39:23 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x000000014237bc06: '<unknown (@0x14237bc06)>'
+# 1    0x000000014237bb35: '<unknown (@0x14237bb35)>'
+# 2    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 3    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 4    0x0000000142397425: '<unknown (@0x142397425)>'
+# 5    0x0000000142391419: '<unknown (@0x142391419)>'
+# 6    0x00007ff4f811fb7f: 'FIR_coverage.sv:22'
+# 7    0x00007ff4f811ecc5: 'FIR_coverage.sv:38'
+# 8    0x00007ff4f811ee24: 'FIR_coverage.sv:36'
+# 9    0x00007ff4f8102d80: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 10   0x00007ff4f6ee6e39: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 11   0x00007ff4f81039b2: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 12   0x00007ff4f81040d6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 13   0x00007ff4f8129d41: 'FIR_env.sv:29'
+# 14   0x00007ff4f7c3a497: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 15   0x00007ff4f7c37f26: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 16   0x00007ff4f7c372ee: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 17   0x00007ff4f7c37804: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 18   0x00007ff4f7c37804: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 19   0x00007ff4f7c19b41: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 20   0x00007ff4f7c18950: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 21   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 22   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 23   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 24   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 25   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:39:39 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:40:15 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:41:28 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 09:51:29 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# 0    0x000000014237bc06: '<unknown (@0x14237bc06)>'
+# 1    0x000000014237bb35: '<unknown (@0x14237bb35)>'
+# 2    0x0000000142392bb4: '<unknown (@0x142392bb4)>'
+# 3    0x000000014239660e: '<unknown (@0x14239660e)>'
+# 4    0x0000000142397425: '<unknown (@0x142397425)>'
+# 5    0x0000000142391419: '<unknown (@0x142391419)>'
+# 6    0x00007ff4f811fb4f: 'FIR_coverage.sv:22'
+# 7    0x00007ff4f811ec95: 'FIR_coverage.sv:38'
+# 8    0x00007ff4f811edf4: 'FIR_coverage.sv:36'
+# 9    0x00007ff4f8102d50: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:66'
+# 10   0x00007ff4f6ee6e39: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_factory.svh:1165'
+# 11   0x00007ff4f8103982: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:113'
+# 12   0x00007ff4f81040a6: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh:108'
+# 13   0x00007ff4f8129d11: 'FIR_env.sv:29'
+# 14   0x00007ff4f7c3a487: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh:54'
+# 15   0x00007ff4f7c37f16: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:111'
+# 16   0x00007ff4f7c372de: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:78'
+# 17   0x00007ff4f7c377f4: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 18   0x00007ff4f7c377f4: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_topdown_phase.svh:95'
+# 19   0x00007ff4f7c19b41: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1156'
+# 20   0x00007ff4f7c18950: 'D:/B/qsim_2021_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_phase.svh:1847'
+# 21   0x00000001420b862a: '<unknown (@0x1420b862a)>'
+# 22   0x000000014030e365: '<unknown (@0x14030e365)>'
+# 23   0x00000001400aeff3: '<unknown (@0x1400aeff3)>'
+# 24   0x0000000140353d61: '<unknown (@0x140353d61)>'
+# 25   0x00000001408f4463: '<unknown (@0x1408f4463)>'
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 10:18:05 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 13:31:05 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
+# Current time Fri Feb 20 13:33:43 2026
+# Program = vsim
+# Id = "2021.1"
+# Version = "2021.01"
+# Date = "Jan 19 2021"
+# Platform = win64
+# Signature = 99d18aae03b903020083b878a6f2cf5a
+# End of Stack Trace
+
+
